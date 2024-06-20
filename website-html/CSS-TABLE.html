@@ -23,7 +23,14 @@
 <body>
     <taBLE class="tb1">
         <tr>
-            <th>column1</th>
+            <th rowspan="2">column1</th>
+            <th>column2</th>
+            <th>column3</th>
+            <th>column4</th>
+            <th>column5</th>
+        </tr>
+        <tr>
+            <!-- <th>column1</th> -->
             <th>column2</th>
             <th>column3</th>
             <th>column4</th>
@@ -53,23 +60,23 @@
         <tr>
             <td>1</td>
             <td>2</td>
-            <td>3</td>
+            <td rowspan="3">3</td>
             <td>4</td>
             <td>5</td>
         </tr>
         <tr>
             <td>1</td>
             <td>2</td>
-            <td>3</td>
+            <!-- <td>3</td> -->
             <td>4</td>
             <td>5</td>
         </tr>
         <tr>
             <td>1</td>
             <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
+            <!-- <td>3</td> -->
+            <td colspan="2">4</td>
+            <!-- <td>5</td> -->
         </tr>
 
     </taBLE>
