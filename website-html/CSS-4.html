@@ -4,20 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css-selectors-class</title>
+    <title>css-selectors-ID</title>
     <STYle>
-
+        #theID {
+            font-style: italic;
+        }
     </STYle>
-    <link rel="stylesheet" href="styles/st1.css">
+
 </head>
 
 <body>
-    <h1 id="h1id" class="colh1">HELLO!</h1>
-    <H2 class="st2">GOOGLE MORNING</H2>
+    <h1 id="theID">HELLO!</h1>
+    <H2 id="theID">GOOGLE MORNING</H2>
     <H2>GOOGLE night</H2>
     <H3 class="st2">DEBBIE~</H3>
     <h4 class="col1 text1 col2">cute kitty</h4>
     <h5 class="col2 text2 col1">cute puppy</h5>
+
+    <SCript>
+        document.getElementById("theID").style.fontStyle = "italic";
+
+    </SCript>
 
 </body>
 

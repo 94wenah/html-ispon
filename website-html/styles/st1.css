@@ -1,0 +1,57 @@
+.st1 {
+    background-color: rgb(186, 186, 243);
+    text-decoration: line-through;
+}
+
+h2.st2 {
+    font-style: italic;
+    color: aqua;
+    font-size: 3em;
+}
+
+.col1 {
+    background-color: palevioletred;
+}
+
+.col2 {
+    background-color: pink;
+}
+
+.font {
+    font-style: italic;
+}
+
+.text1 {
+    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+.text2 {
+    text-transform: lowercase;
+}
+
+.colh1 {
+    color: brown;
+}
+
+h1 {
+    color: rgb(255, 11, 11);
+}
+
+#h1id {
+    color: aquamarine;
+}
+
+.list1 {
+    list-style-type: square;
+    list-style-image: url("none")
+}
+
+.list2 {
+    background-color: #BEBEBE;
+    list-style-type: none;
+    list-style-image: url("../images/arrow-icon.jpg");
+    border: 5px dotted #FF0080;
+    /* border-radius: 20px 0 20px 0; */
+    border-top-right-radius: 50px;
+}

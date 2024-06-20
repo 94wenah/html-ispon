@@ -5,6 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>超連結圖片練習</title>
+    <style>
+        .LIST a:link {
+            color: #921AFF;
+        }
+
+        .LIST a:visited {
+            color: #00EC00;
+        }
+
+        .LIST a:hover {
+            color: #00E3E3;
+            text-decoration: underline;
+        }
+
+        .LIST a:active {
+            color: #FF0080;
+            font-size: 120%;
+        }
+
+        /* .list1 {
+            list-style-type: square;
+            list-style-image: url("none")
+        }
+
+        .list2 {
+            list-style-type: none;
+            list-style-image: url("images/arrow-icon.jpg");
+        } */
+    </style>
+    <link rel="stylesheet" href="styles/st1.css">
 </head>
 
 <body>
@@ -13,6 +43,13 @@
     <a href="#book1">Introduction</a>
     <a href="#book2">Types</a>
     <a href="mailto:94wenah@gmail.com">mail to me</a>
+
+    <ul class="LIST">
+        <li><a href="https://www.google.com.tw/?hl=zh_TW">首頁</a></li>
+        <li><a href="index.html">瞭解更多</a></li>
+        <li><a href="list.html">關於</a></li>
+        <li><a href="mailto:94wenah@gmail.com">聯絡我們</a></li>
+    </ul>
     <H2 id="book1" style="background-color: aquamarine;">Introduction to Whales</H2>
     <figure style="background-color: black;">
         <img src="images/p2.webp" alt="大翅鯨正在跳舞" title="大翅鯨" width="600">
@@ -42,11 +79,11 @@
     </P>
     <H2 id="book2" style="background-color: aquamarine;">Types of Whales</H2>
     <p>
-    <ul>
+    <ul class="list2">
         <li>Baleen Whales
             <p>Baleen Whales make up the majority of them. They have a sieve structure in the jaw area that allows them
                 to easily filter food out of water.</p>
-            <ul>
+            <ul class="list1">
                 <li>Blue Whale</li>
                 <li>Gray Whale</li>
                 <li>Bowhead Whale</li>
@@ -60,7 +97,7 @@
         <li>Toothed Whales</li>
         <p>Toothed Whales are carnivorous and as their name implies they have teeth that allow them to easily hunt their
             prey.</p>
-        <ul>
+        <ul class="list1">
             <li>Sperm Whale</li>
             <li>Narwhal Whale</li>
             <li>Pilot Whale</li>
