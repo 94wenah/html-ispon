@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe元素</title>
+    <style>
+        #iframe,
+        #code {
+            margin: auto;
+            width: 90%;
+            padding: 2% 0;
+            /* border: 1px solid gray; */
+        }
+
+        #iframe .wrapper {
+            width: 100%;
+            overflow: auto;
+        }
+
+        #iframe .iframe_info {
+            width: 30%;
+            float: left;
+        }
+
+        #iframe .iframe_content {
+            width: 66%;
+            float: right;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        #iframe hr,
+        #code hr {
+            width: 100%;
+            border: 2px dotted rgb(184, 174, 174);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="code">
+        <h3>原始碼輸出</h3>
+        <!-- 請使用特殊字元修改以下原始碼 -->
+        <!-- <iframe src="https://www.ispan.com.tw" width="800" height="600"></iframe> -->
+        <hr>
+    </section>
+
+    <section id="iframe">
+        <div class="wrapper">
+            <div class="iframe_info">
+                <h3>聯合新聞網</h3>
+            </div>
+            <div class="iframe_content">
+                <!-- 請在這裡輸入要嵌入的網站 -->
+                <iframe src="https://udn.com/news/index" frameborder="0" width="600" height="450"></iframe>
+            </div><!--end iframe_content-->
+        </div><!--end wrapper-->
+        <hr>
+    </section>
+
+    <section id="iframe">
+        <div class="wrapper">
+            <div class="iframe_info">
+                <h3>聯合線上股份有限公司位置</h3>
+                <p>
+                    地址:22161 新北市汐止區大同路一段 369 號<br>
+                    電話:+886.2.8692-55888<br>
+                    網址:<a href="http://co.udn.com">http://co.udn.com</a>
+                </p>
+            </div>
+            <div class="iframe_content">
+                <!-- 請在這裡嵌入地圖 -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.1975888433485!2d121.64069870000002!3d25.061291300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d535ab32dc881%3A0x97b9fb489074c462!2zMjIx5paw5YyX5biC5rGQ5q2i5Y2A5aSn5ZCM6Lev5LiA5q61MzY56Jmf!5e0!3m2!1szh-TW!2stw!4v1719297110452!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div><!--end iframe_content-->
+        </div><!--end wrapper-->
+        <hr>
+    </section>
+
+    <section id="iframe">
+        <div class="wrapper">
+            <div class="iframe_info">
+                <h3>YouTube</h3>
+                <p>直播新聞</p>
+            </div>
+            <div class="iframe_content">
+                <!-- 請在這裡嵌入YouTube -->
+                <iframe width="600" height="450" src="https://www.youtube.com/embed/rx52zlAgKa0" title="0625卓榮泰施政報告並備詢"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div><!--end liframe_content-->
+        </div><!--end wrapper-->
+        <hr>
+    </section>
+
+</body>
+
+</html>
