@@ -12,72 +12,105 @@
             border-collapse: collapse;
         }
 
-        td,
-        th {
-            border: 2px solid salmon;
+
+        td {
+            border: 1px double salmon;
+
+        }
+
+        thead {
+            background-color: #FF8F59;
+
+        }
+
+        tbody {
+            background-color: aqua;
             text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: rgb(245, 4, 84);
+            color: rgb(77, 77, 77);
+            text-decoration: underline;
+        }
+
+        tbody td:hover {
+            background-color: yellow;
+
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: aquamarine;
+
         }
     </style>
 </head>
 
 <body>
     <taBLE class="tb1">
-        <tr>
-            <th rowspan="2">column1</th>
-            <th>column2</th>
-            <th>column3</th>
-            <th>column4</th>
-            <th>column5</th>
-        </tr>
-        <tr>
-            <!-- <th>column1</th> -->
-            <th>column2</th>
-            <th>column3</th>
-            <th>column4</th>
-            <th>column5</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="3">3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <!-- <td>3</td> -->
-            <td>4</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <!-- <td>3</td> -->
-            <td colspan="2">4</td>
-            <!-- <td>5</td> -->
-        </tr>
+        <caption>
+            <h2>表格練習</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="2">column1</th>
+                <th>column2</th>
+                <th>column3</th>
+                <th>column4</th>
+                <th>column5</th>
+            </tr>
+            <tr>
+                <!-- <th>column1</th> -->
+                <th>column2</th>
+                <th>column3</th>
+                <th>column4</th>
+                <th>column5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="3">3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td colspan="2">4</td>
+                <!-- <td>5</td> -->
+            </tr>
+        </tbody>
 
     </taBLE>
 </body>

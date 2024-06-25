@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .str1 {
+            width: 450px;
+            border-bottom: 2px dotted #8CEA00;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .sub1 {
+            width: 450px;
+            text-align: center;
+        }
+
+        .lab1 {
+            width: 130px;
+            /* border: 1px solid red; */
+            float: left;
+            text-align: left;
+
+        }
+
+        fieldset {
+            width: 500px;
+            border-radius: 30px;
+            border: 3px double #D9B300;
+        }
+
+        legend {
+            color: #FF8000;
+            text-decoration: underline;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>帳戶資料</legend>
+            <div class="str1">
+                <label for="account1" class="lab1">帳號:</label><input type="text" id="account1" name="account"
+                    value="請輸入名字" size="10">
+            </div>
+            <div class="str1">
+                <label for="pwd1" class="lab1">密碼:</label><input type="password" id="pwd1" name="pwd" maxlength="6">
+            </div>
+            <div class="str1">
+                <label for="" class="lab1">性別:</label>
+                <label>
+                    <input type="radio" name="gender" value="male" id="">男
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" id="">女
+                </label>
+            </div>
+
+
+            <div class="str1">
+                <label for="" class="lab1">興趣:</label>
+                <label>
+                    <input type="checkbox" name="hobby" id="" value="music">音樂
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" id="" value="hiking">健行
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" id="" value="reading">閱讀
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" id="" value="trealing">旅遊
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>地址資料</legend>
+            <div class="str1">
+                <label class="lab1">居住地區:</label>
+                <select name="livingin">
+                    <option value="tpe">台北市</option>
+                    <option value="tph">新北市</option>
+                    <option value="tyu">桃園市</option>
+                    <option value="hsc" selected>新竹市</option>
+                </select>
+            </div>
+            <div class="str1">
+                <label for="add1" class="lab1">地址:</label><input type="text" id="add1" name="add" value="請輸入地址"
+                    size="30">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>帳戶資料二</legend>
+            <div class="str1">
+                <label class="lab1">上傳個人照片:</label>
+                <input type="file" name="pic" id="" accept=".png,.jpg">
+            </div>
+
+
+            <div class="str1">
+                <label for="comment1" class="lab1">回饋:</label><textarea cols="40" rows="5" id="comment1"
+                    name="comment"></textarea>
+            </div>
+            <div class="sub1">
+                <input type="submit" value="送出">
+                <input type="reset" value="清除">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
