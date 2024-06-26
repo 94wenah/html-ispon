@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module</title>
+
+    <style>
+        .list {
+            background-color: palegreen;
+            border: 3px solid brown;
+            overflow: auto;
+            list-style-type: none;
+
+        }
+
+        .list li {
+            width: 10em;
+            float: left;
+        }
+
+        .list li a {
+            text-align: center;
+            display: block;
+            line-height: 2.5em;
+        }
+
+        .list li a:hover {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .box {
+            background-color: aquamarine;
+        }
+
+        .label {
+            background-color: blueviolet;
+        }
+
+        .span2 {
+            visibility: hidden;
+        }
+
+        .box:active .span1 {
+            display: none;
+        }
+
+        .box:active .span2 {
+            visibility: hidden;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li><a href="https://www.google.com.tw/?hl=zh_TW">首頁</a></li>
+        <li><a href="index.html">瞭解更多</a></li>
+        <li><a href="list.html">關於</a></li>
+        <li><a href="mailto:94wenah@gmail.com">聯絡我們</a></li>
+    </ul>
+
+    <div class="box">
+        <span class="span1">
+            i am span 1!
+        </span>
+        <label class="label">
+            <span class="span2">
+                i am span 2!
+            </span></label>
+    </div>
+
+    <div>
+
+    </div>
+
+</body>
+
+</html>
